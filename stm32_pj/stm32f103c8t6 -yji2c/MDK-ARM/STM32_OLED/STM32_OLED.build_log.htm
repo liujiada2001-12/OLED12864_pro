@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LIU 8618150600805, 1, LIC=MPPLD-8HDQN-NNSAF-6LKEY-E5BI9-T4TGN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\KEIL\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\32_PROJECT\1pro_for_light\stm32_pj\stm32f103c8t6 -yji2c\MDK-ARM\STM32_OLED.uvprojx
+Project File Date:  07/13/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\KEIL\ARM\ARMCC\Bin'
+Build target 'STM32_OLED'
+compiling user_oled.c...
+../OLED_Drive/oled.h(25): warning:  #1295-D: Deprecated declaration Refresh - give arg types
+  void Refresh();
+../OLED_Drive/oled.h(26): warning:  #1295-D: Deprecated declaration DMA_Refresh - give arg types
+  void DMA_Refresh();
+..\user\user_oled.c(280): warning:  #111-D: statement is unreachable
+          case 0 : return "Sunday"; break;
+..\user\user_oled.c(281): warning:  #111-D: statement is unreachable
+          case 1 : return "Monday"; break;
+..\user\user_oled.c(282): warning:  #111-D: statement is unreachable
+          case 2 : return "Tuesday"; break;
+..\user\user_oled.c(283): warning:  #111-D: statement is unreachable
+          case 3 : return "Wednesday"; break;
+..\user\user_oled.c(284): warning:  #111-D: statement is unreachable
+          case 4 : return "Thursday"; break;
+..\user\user_oled.c(285): warning:  #111-D: statement is unreachable
+          case 5 : return "Friday"; break;                                                             
+..\user\user_oled.c(286): warning:  #111-D: statement is unreachable
+          case 6 : return "Saturday"; break;
+..\user\user_oled.c(287): warning:  #111-D: statement is unreachable
+          default : return NULL; break;
+..\user\user_oled.c(304): warning:  #223-D: function "sprintf" declared implicitly
+      sprintf(time,"%02d/%02d/%02d",(2000 + GetData.Year), GetData.Month, GetData.Date);
+..\user\user_oled.c(312): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(1,4,0);//ÈÕ
+..\user\user_oled.c(320): error:  #167: argument of type "uint8_t *" is incompatible with parameter of type "uint8_t"
+  		OLED_ShowPicture(myBMP1);
+..\user\user_oled.c(322): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(2,6,6);//»¶
+..\user\user_oled.c(332): error:  #167: argument of type "uint8_t *" is incompatible with parameter of type "uint8_t"
+  		OLED_ShowPicture(xiaohui);
+..\user\user_oled.c(333): error:  #167: argument of type "uint8_t *" is incompatible with parameter of type "uint8_t"
+  		OLED_ShowPicture(yuanhui);
+..\user\user_oled.c(340): error:  #167: argument of type "uint8_t *" is incompatible with parameter of type "uint8_t"
+  		OLED_ShowPicture(myBMP);
+..\user\user_oled.c(351): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(time,"%02d",(2000 + GetData.Year));
+..\user\user_oled.c(368): warning:  #223-D: function "OLED_Refresh" declared implicitly
+  		OLED_Refresh();
+..\user\user_oled.c(369): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(1,2,2);//¹â
+..\user\user_oled.c(377): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(lightdata2[0],"%2d.  %.2f",data_num-2,lightdata[data_num-2]);
+..\user\user_oled.c(383): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(lightdata2[0],"%2d.  %.2f",data_num-1,lightdata[data_num-1]);
+..\user\user_oled.c(388): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(lightdata2[0],"%2d.  %.2f",data_num,lightdata[data_num]);
+..\user\user_oled.c(398): warning:  #223-D: function "OLED_Refresh" declared implicitly
+  		OLED_Refresh();
+..\user\user_oled.c(399): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(2,2,10);//
+..\user\user_oled.c(409): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(1,1,10);//
+..\user\user_oled.c(415): warning:  #223-D: function "OLED_Chinese" declared implicitly
+  		OLED_Chinese(3,1,44);//
+..\user\user_oled.c(424): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(1,2,10);//
+..\user\user_oled.c(430): warning:  #223-D: function "OLED_Chinese" declared implicitly
+  		OLED_Chinese(3,1,44);//
+..\user\user_oled.c(440): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(1,1,10);//
+..\user\user_oled.c(446): warning:  #223-D: function "OLED_Chinese" declared implicitly
+  		OLED_Chinese(3,4,44);//
+..\user\user_oled.c(455): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(1,1,10);//
+..\user\user_oled.c(461): warning:  #223-D: function "OLED_Chinese" declared implicitly
+  		OLED_Chinese(3,1,44);//
+..\user\user_oled.c(471): warning:  #223-D: function "OLED_Chinese16" declared implicitly
+  		OLED_Chinese16(2,3,4);//ÄãºÃ
+..\user\user_oled.c(474): warning:  #1-D: last line of file ends without a newline
+  }
+..\user\user_oled.c: 31 warnings, 4 errors
+"STM32_OLED\STM32_OLED.axf" - 4 Error(s), 31 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32_OLED
+  D:\KEIL\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\KEIL\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

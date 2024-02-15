@@ -1,0 +1,219 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LIU 8618150600805, 1, LIC=MPPLD-8HDQN-NNSAF-6LKEY-E5BI9-T4TGN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\KEIL\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\32_PROJECT\1pro_for_light\stm32f103c8t6\stm32f103c8t6\MDK-ARM\STM32_OLED.uvprojx
+Project File Date:  07/13/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\KEIL\ARM\ARMCC\Bin'
+Build target 'STM32_OLED'
+assembling startup_stm32f103xb.s...
+compiling rtc.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal.c...
+compiling main.c...
+compiling i2c.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling tsl2561.c...
+..\user\tsl2561.c(78): warning:  #177-D: variable "commad"  was declared but never referenced
+  uint8_t DataLow0,DataHigh0,DataLow1,DataHigh1,commad;
+..\user\tsl2561.c(79): warning:  #177-D: variable "temp"  was declared but never referenced
+  float Channel_0,Channel_1,temp;
+..\user\tsl2561.c(127): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,1);
+..\user\tsl2561.c(131): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,0);
+..\user\tsl2561.c: 4 warnings, 0 errors
+compiling user_i2c.c...
+compiling stm32f1xx_hal_rtc.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_rtc_ex.c...
+compiling user_key.c...
+..\user\user_key.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\user\user_key.c: 1 warning, 0 errors
+compiling user_oled.c...
+..\user\user_oled.c(280): warning:  #111-D: statement is unreachable
+          case 0 : return "Sunday"; break;
+..\user\user_oled.c(281): warning:  #111-D: statement is unreachable
+          case 1 : return "Monday"; break;
+..\user\user_oled.c(282): warning:  #111-D: statement is unreachable
+          case 2 : return "Tuesday"; break;
+..\user\user_oled.c(283): warning:  #111-D: statement is unreachable
+          case 3 : return "Wednesday"; break;
+..\user\user_oled.c(284): warning:  #111-D: statement is unreachable
+          case 4 : return "Thursday"; break;
+..\user\user_oled.c(285): warning:  #111-D: statement is unreachable
+          case 5 : return "Friday"; break;                                                             
+..\user\user_oled.c(286): warning:  #111-D: statement is unreachable
+          case 6 : return "Saturday"; break;
+..\user\user_oled.c(287): warning:  #111-D: statement is unreachable
+          default : return NULL; break;
+..\user\user_oled.c(304): warning:  #223-D: function "sprintf" declared implicitly
+      sprintf(time,"%02d/%02d/%02d",(2000 + GetData.Year), GetData.Month, GetData.Date);
+..\user\user_oled.c(351): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(time,"%02d",(2000 + GetData.Year));
+..\user\user_oled.c(377): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(lightdata2[0],"%2d.  %.2f",data_num-2,lightdata[data_num-2]);
+..\user\user_oled.c(383): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(lightdata2[0],"%2d.  %.2f",data_num-1,lightdata[data_num-1]);
+..\user\user_oled.c(388): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(lightdata2[0],"%2d.  %.2f",data_num,lightdata[data_num]);
+..\user\user_oled.c(474): warning:  #1-D: last line of file ends without a newline
+  }
+..\user\user_oled.c: 14 warnings, 0 errors
+compiling tsl2561_i2c.c...
+..\user\tsl2561_i2c.c(12): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(1);
+..\user\tsl2561_i2c.c(13): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(1);
+..\user\tsl2561_i2c.c(18): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(1);
+..\user\tsl2561_i2c.c(19): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(1);
+..\user\tsl2561_i2c.c(21): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(0);
+..\user\tsl2561_i2c.c(23): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c(28): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c(29): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(0);
+..\user\tsl2561_i2c.c(31): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(1);
+..\user\tsl2561_i2c.c(33): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(1);
+..\user\tsl2561_i2c.c(39): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c(42): warning:  #188-D: enumerated type mixed with another type
+  		TSL2561_W_SDA(1);
+..\user\tsl2561_i2c.c(46): warning:  #188-D: enumerated type mixed with another type
+  		TSL2561_W_SDA(0);
+..\user\tsl2561_i2c.c(53): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(1);//主设备释放SDA总线控制权----开漏功能
+..\user\tsl2561_i2c.c(54): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c(56): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(1);
+..\user\tsl2561_i2c.c(62): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c(65): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(1);
+..\user\tsl2561_i2c.c(76): warning:  #188-D: enumerated type mixed with another type
+  		TSL2561_W_SCL(0);//开始准备数据
+..\user\tsl2561_i2c.c(79): warning:  #188-D: enumerated type mixed with another type
+  			TSL2561_W_SDA(1);
+..\user\tsl2561_i2c.c(83): warning:  #188-D: enumerated type mixed with another type
+  			TSL2561_W_SDA(0);
+..\user\tsl2561_i2c.c(87): warning:  #188-D: enumerated type mixed with another type
+  		TSL2561_W_SCL(1);//开始发送数据
+..\user\tsl2561_i2c.c(91): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c(99): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SDA(1);//主设备释放SDA总线控制权
+..\user\tsl2561_i2c.c(103): warning:  #188-D: enumerated type mixed with another type
+  		TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c(106): warning:  #188-D: enumerated type mixed with another type
+  		TSL2561_W_SCL(1);
+..\user\tsl2561_i2c.c(114): warning:  #188-D: enumerated type mixed with another type
+  	TSL2561_W_SCL(0);
+..\user\tsl2561_i2c.c: 27 warnings, 0 errors
+compiling oled.c...
+..\OLED_Drive\oled.c(154): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(1);
+..\OLED_Drive\oled.c(155): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SDA(1);
+..\OLED_Drive\oled.c(165): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SDA(1);
+..\OLED_Drive\oled.c(166): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(1);
+..\OLED_Drive\oled.c(167): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SDA(0);
+..\OLED_Drive\oled.c(168): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(0);
+..\OLED_Drive\oled.c(178): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SDA(0);
+..\OLED_Drive\oled.c(179): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(1);
+..\OLED_Drive\oled.c(180): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SDA(1);
+..\OLED_Drive\oled.c(189): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(1);
+..\OLED_Drive\oled.c(190): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(0);
+..\OLED_Drive\oled.c(203): warning:  #188-D: enumerated type mixed with another type
+  		OLED_W_SDA(Byte & (0x80 >> i));// 
+..\OLED_Drive\oled.c(204): warning:  #188-D: enumerated type mixed with another type
+  		OLED_W_SCL(1);
+..\OLED_Drive\oled.c(205): warning:  #188-D: enumerated type mixed with another type
+  		OLED_W_SCL(0);
+..\OLED_Drive\oled.c(207): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(1);	//棰濆鐨勪竴涓椂閽燂紝涓嶅鐞嗗簲绛斾俊鍙?
+..\OLED_Drive\oled.c(208): warning:  #188-D: enumerated type mixed with another type
+  	OLED_W_SCL(0);
+..\OLED_Drive\oled.c: 16 warnings, 0 errors
+linking...
+Program Size: Code=22892 RO-data=3036 RW-data=3156 ZI-data=3156  
+FromELF: creating hex file...
+"STM32_OLED\STM32_OLED.axf" - 0 Error(s), 62 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32_OLED
+  D:\KEIL\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\KEIL\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>

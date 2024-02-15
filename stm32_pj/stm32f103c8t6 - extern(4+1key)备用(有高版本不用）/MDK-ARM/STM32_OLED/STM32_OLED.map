@@ -1,0 +1,724 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    startup_stm32f103xb.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f103xb.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f103xb.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f103xb.o(RESET) refers to startup_stm32f103xb.o(STACK) for __initial_sp
+    startup_stm32f103xb.o(RESET) refers to startup_stm32f103xb.o(.text) for Reset_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.NMI_Handler) for NMI_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.HardFault_Handler) for HardFault_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.MemManage_Handler) for MemManage_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.BusFault_Handler) for BusFault_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.SVC_Handler) for SVC_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.PendSV_Handler) for PendSV_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.SysTick_Handler) for SysTick_Handler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.EXTI1_IRQHandler) for EXTI1_IRQHandler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.EXTI2_IRQHandler) for EXTI2_IRQHandler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.EXTI3_IRQHandler) for EXTI3_IRQHandler
+    startup_stm32f103xb.o(RESET) refers to stm32f1xx_it.o(i.EXTI4_IRQHandler) for EXTI4_IRQHandler
+    startup_stm32f103xb.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f103xb.o(.text) refers to system_stm32f1xx.o(i.SystemInit) for SystemInit
+    startup_stm32f103xb.o(.text) refers to __main.o(!!!main) for __main
+    startup_stm32f103xb.o(.text) refers to startup_stm32f103xb.o(HEAP) for Heap_Mem
+    startup_stm32f103xb.o(.text) refers to startup_stm32f103xb.o(STACK) for Stack_Mem
+    main.o(i.SystemClock_Config) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    main.o(i.SystemClock_Config) refers to stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig) for HAL_RCC_OscConfig
+    main.o(i.SystemClock_Config) refers to stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig) for HAL_RCC_ClockConfig
+    main.o(i.SystemClock_Config) refers to stm32f1xx_hal_rcc_ex.o(i.HAL_RCCEx_PeriphCLKConfig) for HAL_RCCEx_PeriphCLKConfig
+    main.o(i.main) refers to stm32f1xx_hal.o(i.HAL_Init) for HAL_Init
+    main.o(i.main) refers to main.o(i.SystemClock_Config) for SystemClock_Config
+    main.o(i.main) refers to stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority) for HAL_NVIC_SetPriority
+    main.o(i.main) refers to gpio.o(i.MX_GPIO_Init) for MX_GPIO_Init
+    main.o(i.main) refers to rtc.o(i.MX_RTC_Init) for MX_RTC_Init
+    main.o(i.main) refers to tsl2561.o(i.TSL2561_Init) for TSL2561_Init
+    main.o(i.main) refers to oled.o(i.OLED_Init) for OLED_Init
+    main.o(i.main) refers to menu.o(i.Menu_key_set) for Menu_key_set
+    main.o(.data) refers to main.o(.constdata) for kunBMP1
+    main.o(.data) refers to main.o(.constdata) for kunBMP2
+    main.o(.data) refers to main.o(.constdata) for kunBMP3
+    main.o(.data) refers to main.o(.constdata) for kunBMP4
+    main.o(.data) refers to main.o(.constdata) for kunBMP5
+    main.o(.data) refers to main.o(.constdata) for kunBMP6
+    main.o(.data) refers to main.o(.constdata) for kunBMP7
+    main.o(.data) refers to main.o(.constdata) for kunBMP8
+    main.o(.data) refers to main.o(.constdata) for kunBMP9
+    main.o(.data) refers to main.o(.constdata) for kunBMP10
+    main.o(.data) refers to main.o(.constdata) for kunBMP11
+    main.o(.data) refers to main.o(.constdata) for kunBMP12
+    main.o(.data) refers to main.o(.constdata) for kunBMP13
+    main.o(.data) refers to main.o(.constdata) for kunBMP14
+    main.o(.data) refers to main.o(.constdata) for kunBMP15
+    main.o(.data) refers to main.o(.constdata) for kunBMP16
+    main.o(.data) refers to main.o(.constdata) for kunBMP17
+    main.o(.data) refers to main.o(.constdata) for kunBMP18
+    main.o(.data) refers to main.o(.constdata) for kunBMP19
+    main.o(.data) refers to main.o(.constdata) for kunBMP20
+    main.o(.data) refers to main.o(.constdata) for kunBMP21
+    main.o(.data) refers to main.o(.constdata) for kunBMP22
+    main.o(.data) refers to main.o(.constdata) for kunBMP23
+    main.o(.data) refers to main.o(.constdata) for kunBMP24
+    main.o(.data) refers to main.o(.constdata) for kunBMP25
+    main.o(.data) refers to main.o(.constdata) for kunBMP26
+    gpio.o(i.MX_GPIO_Init) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    gpio.o(i.MX_GPIO_Init) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    gpio.o(i.MX_GPIO_Init) refers to stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority) for HAL_NVIC_SetPriority
+    gpio.o(i.MX_GPIO_Init) refers to stm32f1xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ) for HAL_NVIC_EnableIRQ
+    rtc.o(i.HAL_RTC_MspInit) refers to stm32f1xx_hal_pwr.o(i.HAL_PWR_EnableBkUpAccess) for HAL_PWR_EnableBkUpAccess
+    rtc.o(i.MX_RTC_Init) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_Init) for HAL_RTC_Init
+    rtc.o(i.MX_RTC_Init) refers to main.o(i.Error_Handler) for Error_Handler
+    rtc.o(i.MX_RTC_Init) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_SetTime) for HAL_RTC_SetTime
+    rtc.o(i.MX_RTC_Init) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_SetDate) for HAL_RTC_SetDate
+    rtc.o(i.MX_RTC_Init) refers to rtc.o(.bss) for .bss
+    stm32f1xx_it.o(i.EXTI1_IRQHandler) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) for HAL_GPIO_EXTI_IRQHandler
+    stm32f1xx_it.o(i.EXTI2_IRQHandler) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) for HAL_GPIO_EXTI_IRQHandler
+    stm32f1xx_it.o(i.EXTI3_IRQHandler) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) for HAL_GPIO_EXTI_IRQHandler
+    stm32f1xx_it.o(i.EXTI4_IRQHandler) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) for HAL_GPIO_EXTI_IRQHandler
+    stm32f1xx_it.o(i.SysTick_Handler) refers to stm32f1xx_hal.o(i.HAL_IncTick) for HAL_IncTick
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_AlarmIRQHandler) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_AlarmAEventCallback) for HAL_RTC_AlarmAEventCallback
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_DeInit) refers to stm32f1xx_hal_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_DeInit) refers to stm32f1xx_hal_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_DeInit) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_WaitForSynchro) for HAL_RTC_WaitForSynchro
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_DeInit) refers to rtc.o(i.HAL_RTC_MspDeInit) for HAL_RTC_MspDeInit
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_DeactivateAlarm) refers to stm32f1xx_hal_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_DeactivateAlarm) refers to stm32f1xx_hal_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetAlarm) refers to stm32f1xx_hal_rtc.o(i.RTC_ReadAlarmCounter) for RTC_ReadAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetAlarm) refers to stm32f1xx_hal_rtc.o(i.RTC_ByteToBcd2) for RTC_ByteToBcd2
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetDate) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) for HAL_RTC_GetTime
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetDate) refers to stm32f1xx_hal_rtc.o(i.RTC_ByteToBcd2) for RTC_ByteToBcd2
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_ReadTimeCounter) for RTC_ReadTimeCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_ReadAlarmCounter) for RTC_ReadAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteTimeCounter) for RTC_WriteTimeCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteAlarmCounter) for RTC_WriteAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_DateUpdate) for RTC_DateUpdate
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_ByteToBcd2) for RTC_ByteToBcd2
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_Init) refers to rtc.o(i.HAL_RTC_MspInit) for HAL_RTC_MspInit
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_Init) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_WaitForSynchro) for HAL_RTC_WaitForSynchro
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_Init) refers to stm32f1xx_hal_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_Init) refers to stm32f1xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKFreq) for HAL_RCCEx_GetPeriphCLKFreq
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_Init) refers to stm32f1xx_hal_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_PollForAlarmAEvent) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetAlarm) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) for HAL_RTC_GetTime
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetAlarm) refers to stm32f1xx_hal_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetAlarm) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteAlarmCounter) for RTC_WriteAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetAlarm_IT) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) for HAL_RTC_GetTime
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetAlarm_IT) refers to stm32f1xx_hal_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetAlarm_IT) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteAlarmCounter) for RTC_WriteAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetDate) refers to stm32f1xx_hal_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetDate) refers to stm32f1xx_hal_rtc.o(i.RTC_WeekDayNum) for RTC_WeekDayNum
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetDate) refers to stm32f1xx_hal_rtc.o(i.RTC_ReadTimeCounter) for RTC_ReadTimeCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetDate) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteTimeCounter) for RTC_WriteTimeCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetDate) refers to stm32f1xx_hal_rtc.o(i.RTC_ReadAlarmCounter) for RTC_ReadAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetDate) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteAlarmCounter) for RTC_WriteAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteTimeCounter) for RTC_WriteTimeCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_ReadAlarmCounter) for RTC_ReadAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_SetTime) refers to stm32f1xx_hal_rtc.o(i.RTC_WriteAlarmCounter) for RTC_WriteAlarmCounter
+    stm32f1xx_hal_rtc.o(i.HAL_RTC_WaitForSynchro) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rtc.o(i.RTC_DateUpdate) refers to stm32f1xx_hal_rtc.o(i.RTC_WeekDayNum) for RTC_WeekDayNum
+    stm32f1xx_hal_rtc.o(i.RTC_EnterInitMode) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rtc.o(i.RTC_ExitInitMode) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rtc.o(i.RTC_WriteAlarmCounter) refers to stm32f1xx_hal_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f1xx_hal_rtc.o(i.RTC_WriteAlarmCounter) refers to stm32f1xx_hal_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f1xx_hal_rtc.o(i.RTC_WriteTimeCounter) refers to stm32f1xx_hal_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f1xx_hal_rtc.o(i.RTC_WriteTimeCounter) refers to stm32f1xx_hal_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f1xx_hal_rtc_ex.o(i.HAL_RTCEx_PollForTamper1Event) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rtc_ex.o(i.HAL_RTCEx_RTCIRQHandler) refers to stm32f1xx_hal_rtc_ex.o(i.HAL_RTCEx_RTCEventErrorCallback) for HAL_RTCEx_RTCEventErrorCallback
+    stm32f1xx_hal_rtc_ex.o(i.HAL_RTCEx_RTCIRQHandler) refers to stm32f1xx_hal_rtc_ex.o(i.HAL_RTCEx_RTCEventCallback) for HAL_RTCEx_RTCEventCallback
+    stm32f1xx_hal_rtc_ex.o(i.HAL_RTCEx_TamperIRQHandler) refers to stm32f1xx_hal_rtc_ex.o(i.HAL_RTCEx_Tamper1EventCallback) for HAL_RTCEx_Tamper1EventCallback
+    stm32f1xx_hal.o(i.HAL_DeInit) refers to stm32f1xx_hal.o(i.HAL_MspDeInit) for HAL_MspDeInit
+    stm32f1xx_hal.o(i.HAL_Delay) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal.o(i.HAL_Delay) refers to stm32f1xx_hal.o(.data) for .data
+    stm32f1xx_hal.o(i.HAL_GetTick) refers to stm32f1xx_hal.o(.data) for .data
+    stm32f1xx_hal.o(i.HAL_GetTickFreq) refers to stm32f1xx_hal.o(.data) for .data
+    stm32f1xx_hal.o(i.HAL_GetTickPrio) refers to stm32f1xx_hal.o(.data) for .data
+    stm32f1xx_hal.o(i.HAL_IncTick) refers to stm32f1xx_hal.o(.data) for .data
+    stm32f1xx_hal.o(i.HAL_Init) refers to stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping) for HAL_NVIC_SetPriorityGrouping
+    stm32f1xx_hal.o(i.HAL_Init) refers to stm32f1xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    stm32f1xx_hal.o(i.HAL_Init) refers to stm32f1xx_hal_msp.o(i.HAL_MspInit) for HAL_MspInit
+    stm32f1xx_hal.o(i.HAL_InitTick) refers to stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config) for HAL_SYSTICK_Config
+    stm32f1xx_hal.o(i.HAL_InitTick) refers to stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority) for HAL_NVIC_SetPriority
+    stm32f1xx_hal.o(i.HAL_InitTick) refers to stm32f1xx_hal.o(.data) for .data
+    stm32f1xx_hal.o(i.HAL_InitTick) refers to system_stm32f1xx.o(.data) for SystemCoreClock
+    stm32f1xx_hal.o(i.HAL_SetTickFreq) refers to stm32f1xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    stm32f1xx_hal.o(i.HAL_SetTickFreq) refers to stm32f1xx_hal.o(.data) for .data
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to stm32f1xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq) for HAL_RCC_GetSysClockFreq
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to stm32f1xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to system_stm32f1xx.o(.constdata) for AHBPrescTable
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to system_stm32f1xx.o(.data) for SystemCoreClock
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to stm32f1xx_hal.o(.data) for uwTickPrio
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_DeInit) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_DeInit) refers to stm32f1xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_DeInit) refers to system_stm32f1xx.o(.data) for SystemCoreClock
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_DeInit) refers to stm32f1xx_hal.o(.data) for uwTickPrio
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq) refers to system_stm32f1xx.o(.data) for SystemCoreClock
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq) refers to system_stm32f1xx.o(.data) for SystemCoreClock
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq) refers to system_stm32f1xx.o(.constdata) for APBPrescTable
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq) refers to system_stm32f1xx.o(.data) for SystemCoreClock
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq) refers to system_stm32f1xx.o(.constdata) for APBPrescTable
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq) refers to stm32f1xx_hal_rcc.o(.constdata) for .constdata
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_MCOConfig) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_NMI_IRQHandler) refers to stm32f1xx_hal_rcc.o(i.HAL_RCC_CSSCallback) for HAL_RCC_CSSCallback
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig) refers to system_stm32f1xx.o(.data) for SystemCoreClock
+    stm32f1xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKFreq) refers to stm32f1xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq) for HAL_RCC_GetPCLK2Freq
+    stm32f1xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKFreq) refers to stm32f1xx_hal_rcc_ex.o(.constdata) for .constdata
+    stm32f1xx_hal_rcc_ex.o(i.HAL_RCCEx_PeriphCLKConfig) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) refers to user_key.o(i.HAL_GPIO_EXTI_Callback) for HAL_GPIO_EXTI_Callback
+    stm32f1xx_hal_dma.o(i.HAL_DMA_PollForTransfer) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_dma.o(i.HAL_DMA_Start) refers to stm32f1xx_hal_dma.o(i.DMA_SetConfig) for DMA_SetConfig
+    stm32f1xx_hal_dma.o(i.HAL_DMA_Start_IT) refers to stm32f1xx_hal_dma.o(i.DMA_SetConfig) for DMA_SetConfig
+    stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority) refers to stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
+    stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config) refers to stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
+    stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_IRQHandler) refers to stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Callback) for HAL_SYSTICK_Callback
+    stm32f1xx_hal_pwr.o(i.HAL_PWR_EnterSTOPMode) refers to stm32f1xx_hal_pwr.o(i.PWR_OverloadWfe) for PWR_OverloadWfe
+    stm32f1xx_hal_pwr.o(i.HAL_PWR_PVD_IRQHandler) refers to stm32f1xx_hal_pwr.o(i.HAL_PWR_PVDCallback) for HAL_PWR_PVDCallback
+    stm32f1xx_hal_flash.o(i.FLASH_Program_HalfWord) refers to stm32f1xx_hal_flash.o(.bss) for .bss
+    stm32f1xx_hal_flash.o(i.FLASH_SetErrorCode) refers to stm32f1xx_hal_flash.o(.bss) for .bss
+    stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) refers to stm32f1xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) refers to stm32f1xx_hal_flash.o(i.FLASH_SetErrorCode) for FLASH_SetErrorCode
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_GetError) refers to stm32f1xx_hal_flash.o(.bss) for .bss
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32f1xx_hal_flash.o(i.FLASH_SetErrorCode) for FLASH_SetErrorCode
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32f1xx_hal_flash.o(i.HAL_FLASH_OperationErrorCallback) for HAL_FLASH_OperationErrorCallback
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32f1xx_hal_flash.o(i.FLASH_Program_HalfWord) for FLASH_Program_HalfWord
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32f1xx_hal_flash.o(i.HAL_FLASH_EndOfOperationCallback) for HAL_FLASH_EndOfOperationCallback
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_PageErase) for FLASH_PageErase
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32f1xx_hal_flash.o(.bss) for .bss
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_OB_Launch) refers to stm32f1xx_hal_cortex.o(i.HAL_NVIC_SystemReset) for HAL_NVIC_SystemReset
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_Program) refers to stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_Program) refers to llushr.o(.text) for __aeabi_llsr
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_Program) refers to stm32f1xx_hal_flash.o(i.FLASH_Program_HalfWord) for FLASH_Program_HalfWord
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_Program) refers to stm32f1xx_hal_flash.o(.bss) for .bss
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_Program_IT) refers to stm32f1xx_hal_flash.o(i.FLASH_Program_HalfWord) for FLASH_Program_HalfWord
+    stm32f1xx_hal_flash.o(i.HAL_FLASH_Program_IT) refers to stm32f1xx_hal_flash.o(.bss) for .bss
+    stm32f1xx_hal_flash_ex.o(i.FLASH_MassErase) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_DisableWRP) refers to stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_DisableWRP) refers to stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBErase) for HAL_FLASHEx_OBErase
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_DisableWRP) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_EnableWRP) refers to stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_EnableWRP) refers to stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBErase) for HAL_FLASHEx_OBErase
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_EnableWRP) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_RDP_LevelConfig) refers to stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f1xx_hal_flash_ex.o(i.FLASH_OB_RDP_LevelConfig) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.FLASH_PageErase) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase) refers to stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_MassErase) for FLASH_MassErase
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_PageErase) for FLASH_PageErase
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase_IT) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_PageErase) for FLASH_PageErase
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase_IT) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_MassErase) for FLASH_MassErase
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase_IT) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBErase) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_OB_GetRDP) for FLASH_OB_GetRDP
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBErase) refers to stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBErase) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_OB_RDP_LevelConfig) for FLASH_OB_RDP_LevelConfig
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBErase) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBGetConfig) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_OB_GetRDP) for FLASH_OB_GetRDP
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_OB_DisableWRP) for FLASH_OB_DisableWRP
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_OB_EnableWRP) for FLASH_OB_EnableWRP
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32f1xx_hal_flash_ex.o(i.FLASH_OB_RDP_LevelConfig) for FLASH_OB_RDP_LevelConfig
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32f1xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f1xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32f1xx_hal_flash.o(.bss) for pFlash
+    system_stm32f1xx.o(i.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.data) for .data
+    system_stm32f1xx.o(i.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.constdata) for .constdata
+    oled.o(i.OLED_Chinese) refers to oled.o(i.OLED_SetCursor) for OLED_SetCursor
+    oled.o(i.OLED_Chinese) refers to oled.o(i.OLED_WriteData) for OLED_WriteData
+    oled.o(i.OLED_Chinese) refers to oled.o(.constdata) for .constdata
+    oled.o(i.OLED_Chinese16) refers to oled.o(i.OLED_SetCursor) for OLED_SetCursor
+    oled.o(i.OLED_Chinese16) refers to oled.o(i.OLED_WriteData) for OLED_WriteData
+    oled.o(i.OLED_Chinese16) refers to oled.o(.constdata) for .constdata
+    oled.o(i.OLED_Clear) refers to oled.o(i.OLED_SetCursor) for OLED_SetCursor
+    oled.o(i.OLED_Clear) refers to oled.o(i.OLED_WriteData) for OLED_WriteData
+    oled.o(i.OLED_Clear) refers to oled.o(i.OLED_ShowPicture) for OLED_ShowPicture
+    oled.o(i.OLED_Clear) refers to oled.o(i.OLED_Refresh) for OLED_Refresh
+    oled.o(i.OLED_Clear) refers to oled.o(.data) for .data
+    oled.o(i.OLED_DrawPoint) refers to oled.o(.bss) for .bss
+    oled.o(i.OLED_I2C_Init) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    oled.o(i.OLED_I2C_SendByte) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    oled.o(i.OLED_I2C_Start) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    oled.o(i.OLED_I2C_Stop) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    oled.o(i.OLED_I2C_WaitAck) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    oled.o(i.OLED_Init) refers to oled.o(i.OLED_I2C_Init) for OLED_I2C_Init
+    oled.o(i.OLED_Init) refers to oled.o(i.OLED_WriteCommand) for OLED_WriteCommand
+    oled.o(i.OLED_Init) refers to oled.o(i.OLED_Clear) for OLED_Clear
+    oled.o(i.OLED_Refresh) refers to oled.o(i.OLED_WriteCommand) for OLED_WriteCommand
+    oled.o(i.OLED_Refresh) refers to oled.o(i.OLED_WriteData) for OLED_WriteData
+    oled.o(i.OLED_Refresh) refers to oled.o(.bss) for .bss
+    oled.o(i.OLED_SetCursor) refers to oled.o(i.OLED_WriteCommand) for OLED_WriteCommand
+    oled.o(i.OLED_ShowBinNum) refers to oled.o(i.OLED_Pow) for OLED_Pow
+    oled.o(i.OLED_ShowBinNum) refers to oled.o(i.OLED_ShowChar) for OLED_ShowChar
+    oled.o(i.OLED_ShowChar) refers to oled.o(i.OLED_SetCursor) for OLED_SetCursor
+    oled.o(i.OLED_ShowChar) refers to oled.o(i.OLED_WriteData) for OLED_WriteData
+    oled.o(i.OLED_ShowChar) refers to oled.o(.constdata) for .constdata
+    oled.o(i.OLED_ShowFloat) refers to ffix.o(x$fpl$ffix) for __aeabi_f2iz
+    oled.o(i.OLED_ShowFloat) refers to oled.o(i.OLED_ShowSignedNum) for OLED_ShowSignedNum
+    oled.o(i.OLED_ShowFloat) refers to oled.o(i.OLED_ShowChar) for OLED_ShowChar
+    oled.o(i.OLED_ShowFloat) refers to oled.o(i.OLED_Pow) for OLED_Pow
+    oled.o(i.OLED_ShowFloat) refers to fflt_clz.o(x$fpl$fflt) for __aeabi_i2f
+    oled.o(i.OLED_ShowFloat) refers to fmul.o(x$fpl$fmul) for __aeabi_fmul
+    oled.o(i.OLED_ShowFloat) refers to oled.o(i.OLED_ShowNum) for OLED_ShowNum
+    oled.o(i.OLED_ShowHexNum) refers to oled.o(i.OLED_Pow) for OLED_Pow
+    oled.o(i.OLED_ShowHexNum) refers to oled.o(i.OLED_ShowChar) for OLED_ShowChar
+    oled.o(i.OLED_ShowNum) refers to oled.o(i.OLED_Pow) for OLED_Pow
+    oled.o(i.OLED_ShowNum) refers to oled.o(i.OLED_ShowChar) for OLED_ShowChar
+    oled.o(i.OLED_ShowPicture) refers to oled.o(i.OLED_DrawPoint) for OLED_DrawPoint
+    oled.o(i.OLED_ShowSignedNum) refers to oled.o(i.OLED_ShowChar) for OLED_ShowChar
+    oled.o(i.OLED_ShowSignedNum) refers to oled.o(i.OLED_Pow) for OLED_Pow
+    oled.o(i.OLED_ShowString) refers to oled.o(i.OLED_ShowChar) for OLED_ShowChar
+    oled.o(i.OLED_WriteCommand) refers to oled.o(i.OLED_I2C_Start) for OLED_I2C_Start
+    oled.o(i.OLED_WriteCommand) refers to oled.o(i.OLED_I2C_SendByte) for OLED_I2C_SendByte
+    oled.o(i.OLED_WriteCommand) refers to oled.o(i.OLED_I2C_Stop) for OLED_I2C_Stop
+    oled.o(i.OLED_WriteData) refers to oled.o(i.OLED_I2C_Start) for OLED_I2C_Start
+    oled.o(i.OLED_WriteData) refers to oled.o(i.OLED_I2C_SendByte) for OLED_I2C_SendByte
+    oled.o(i.OLED_WriteData) refers to oled.o(i.OLED_I2C_Stop) for OLED_I2C_Stop
+    user_oled.o(i.User_Data) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_Data) refers to oled.o(i.OLED_Chinese) for OLED_Chinese
+    user_oled.o(i.User_Data_Show) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    user_oled.o(i.User_Data_Show) refers to _printf_f.o(.ARM.Collect$$_printf_percent$$00000003) for _printf_f
+    user_oled.o(i.User_Data_Show) refers to printf1.o(x$fpl$printf1) for _printf_fp_dec
+    user_oled.o(i.User_Data_Show) refers to oled.o(i.OLED_Clear) for OLED_Clear
+    user_oled.o(i.User_Data_Show) refers to oled.o(i.OLED_Refresh) for OLED_Refresh
+    user_oled.o(i.User_Data_Show) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_Data_Show) refers to tsl2561.o(i.TSL2561_ReadData) for TSL2561_ReadData
+    user_oled.o(i.User_Data_Show) refers to fflt_clz.o(x$fpl$ffltu) for __aeabi_ui2f
+    user_oled.o(i.User_Data_Show) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
+    user_oled.o(i.User_Data_Show) refers to noretval__2sprintf.o(.text) for __2sprintf
+    user_oled.o(i.User_Data_Show) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    user_oled.o(i.User_Home) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_Init_Show) refers to oled.o(i.OLED_Clear) for OLED_Clear
+    user_oled.o(i.User_Init_Show) refers to oled.o(i.OLED_ShowPicture) for OLED_ShowPicture
+    user_oled.o(i.User_Init_Show) refers to oled.o(i.OLED_Refresh) for OLED_Refresh
+    user_oled.o(i.User_Init_Show) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_Init_Show) refers to user_oled.o(.constdata) for .constdata
+    user_oled.o(i.User_LOG) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_LOG) refers to oled.o(i.OLED_Chinese) for OLED_Chinese
+    user_oled.o(i.User_PIC_Show) refers to _printf_pad.o(.text) for _printf_pre_padding
+    user_oled.o(i.User_PIC_Show) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    user_oled.o(i.User_PIC_Show) refers to _printf_d.o(.ARM.Collect$$_printf_percent$$00000009) for _printf_d
+    user_oled.o(i.User_PIC_Show) refers to _printf_dec.o(.text) for _printf_int_dec
+    user_oled.o(i.User_PIC_Show) refers to oled.o(i.OLED_Clear) for OLED_Clear
+    user_oled.o(i.User_PIC_Show) refers to oled.o(i.OLED_ShowPicture) for OLED_ShowPicture
+    user_oled.o(i.User_PIC_Show) refers to oled.o(i.OLED_Refresh) for OLED_Refresh
+    user_oled.o(i.User_PIC_Show) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) for HAL_RTC_GetTime
+    user_oled.o(i.User_PIC_Show) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_GetDate) for HAL_RTC_GetDate
+    user_oled.o(i.User_PIC_Show) refers to noretval__2sprintf.o(.text) for __2sprintf
+    user_oled.o(i.User_PIC_Show) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    user_oled.o(i.User_PIC_Show) refers to user_oled.o(i.CalWeek) for CalWeek
+    user_oled.o(i.User_PIC_Show) refers to user_oled.o(.constdata) for .constdata
+    user_oled.o(i.User_PIC_Show) refers to rtc.o(.bss) for hrtc
+    user_oled.o(i.User_Play) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_Play) refers to oled.o(i.OLED_Chinese) for OLED_Chinese
+    user_oled.o(i.User_Time) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_Time) refers to oled.o(i.OLED_Chinese) for OLED_Chinese
+    user_oled.o(i.User_Time_Show) refers to _printf_pad.o(.text) for _printf_pre_padding
+    user_oled.o(i.User_Time_Show) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    user_oled.o(i.User_Time_Show) refers to _printf_d.o(.ARM.Collect$$_printf_percent$$00000009) for _printf_d
+    user_oled.o(i.User_Time_Show) refers to _printf_dec.o(.text) for _printf_int_dec
+    user_oled.o(i.User_Time_Show) refers to oled.o(i.OLED_Clear) for OLED_Clear
+    user_oled.o(i.User_Time_Show) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_GetTime) for HAL_RTC_GetTime
+    user_oled.o(i.User_Time_Show) refers to stm32f1xx_hal_rtc.o(i.HAL_RTC_GetDate) for HAL_RTC_GetDate
+    user_oled.o(i.User_Time_Show) refers to noretval__2sprintf.o(.text) for __2sprintf
+    user_oled.o(i.User_Time_Show) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    user_oled.o(i.User_Time_Show) refers to user_oled.o(i.CalWeek) for CalWeek
+    user_oled.o(i.User_Time_Show) refers to oled.o(i.OLED_Chinese16) for OLED_Chinese16
+    user_oled.o(i.User_Time_Show) refers to rtc.o(.bss) for hrtc
+    user_oled.o(i.User_huizhang_Show) refers to oled.o(i.OLED_Clear) for OLED_Clear
+    user_oled.o(i.User_huizhang_Show) refers to oled.o(i.OLED_ShowPicture) for OLED_ShowPicture
+    user_oled.o(i.User_huizhang_Show) refers to oled.o(i.OLED_Refresh) for OLED_Refresh
+    user_oled.o(i.User_huizhang_Show) refers to user_oled.o(.constdata) for .constdata
+    user_i2c.o(i.I2C_End) refers to user_i2c.o(i.I2C_Write_SDA) for I2C_Write_SDA
+    user_i2c.o(i.I2C_End) refers to user_i2c.o(i.I2C_Write_SCL) for I2C_Write_SCL
+    user_i2c.o(i.I2C_End) refers to user_i2c.o(i.I2C_Delay) for I2C_Delay
+    user_i2c.o(i.I2C_Get_ACK) refers to user_i2c.o(i.I2C_Write_SDA) for I2C_Write_SDA
+    user_i2c.o(i.I2C_Get_ACK) refers to user_i2c.o(i.I2C_Delay) for I2C_Delay
+    user_i2c.o(i.I2C_Get_ACK) refers to user_i2c.o(i.I2C_Write_SCL) for I2C_Write_SCL
+    user_i2c.o(i.I2C_Get_ACK) refers to user_i2c.o(i.I2C_Read_SDA) for I2C_Read_SDA
+    user_i2c.o(i.I2C_ReadByte) refers to user_i2c.o(i.I2C_Write_SDA) for I2C_Write_SDA
+    user_i2c.o(i.I2C_ReadByte) refers to user_i2c.o(i.I2C_Write_SCL) for I2C_Write_SCL
+    user_i2c.o(i.I2C_ReadByte) refers to user_i2c.o(i.I2C_Delay) for I2C_Delay
+    user_i2c.o(i.I2C_ReadByte) refers to user_i2c.o(i.I2C_Read_SDA) for I2C_Read_SDA
+    user_i2c.o(i.I2C_ReadByte) refers to user_i2c.o(i.I2C_Send_ACK) for I2C_Send_ACK
+    user_i2c.o(i.I2C_Read_Len) refers to user_i2c.o(i.I2C_Start) for I2C_Start
+    user_i2c.o(i.I2C_Read_Len) refers to user_i2c.o(i.I2C_SendByte) for I2C_SendByte
+    user_i2c.o(i.I2C_Read_Len) refers to user_i2c.o(i.I2C_ReadByte) for I2C_ReadByte
+    user_i2c.o(i.I2C_Read_Len) refers to user_i2c.o(i.I2C_End) for I2C_End
+    user_i2c.o(i.I2C_Read_Reg) refers to user_i2c.o(i.I2C_Start) for I2C_Start
+    user_i2c.o(i.I2C_Read_Reg) refers to user_i2c.o(i.I2C_SendByte) for I2C_SendByte
+    user_i2c.o(i.I2C_Read_Reg) refers to user_i2c.o(i.I2C_ReadByte) for I2C_ReadByte
+    user_i2c.o(i.I2C_Read_Reg) refers to user_i2c.o(i.I2C_End) for I2C_End
+    user_i2c.o(i.I2C_Read_SCL) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    user_i2c.o(i.I2C_Read_SDA) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    user_i2c.o(i.I2C_SendByte) refers to user_i2c.o(i.I2C_Write_SDA) for I2C_Write_SDA
+    user_i2c.o(i.I2C_SendByte) refers to user_i2c.o(i.I2C_Delay) for I2C_Delay
+    user_i2c.o(i.I2C_SendByte) refers to user_i2c.o(i.I2C_Write_SCL) for I2C_Write_SCL
+    user_i2c.o(i.I2C_SendByte) refers to user_i2c.o(i.I2C_Get_ACK) for I2C_Get_ACK
+    user_i2c.o(i.I2C_Send_ACK) refers to user_i2c.o(i.I2C_Write_SDA) for I2C_Write_SDA
+    user_i2c.o(i.I2C_Send_ACK) refers to user_i2c.o(i.I2C_Delay) for I2C_Delay
+    user_i2c.o(i.I2C_Send_ACK) refers to user_i2c.o(i.I2C_Write_SCL) for I2C_Write_SCL
+    user_i2c.o(i.I2C_Start) refers to user_i2c.o(i.I2C_Write_SDA) for I2C_Write_SDA
+    user_i2c.o(i.I2C_Start) refers to user_i2c.o(i.I2C_Write_SCL) for I2C_Write_SCL
+    user_i2c.o(i.I2C_Start) refers to user_i2c.o(i.I2C_Delay) for I2C_Delay
+    user_i2c.o(i.I2C_Write_Len) refers to user_i2c.o(i.I2C_Start) for I2C_Start
+    user_i2c.o(i.I2C_Write_Len) refers to user_i2c.o(i.I2C_SendByte) for I2C_SendByte
+    user_i2c.o(i.I2C_Write_Len) refers to user_i2c.o(i.I2C_End) for I2C_End
+    user_i2c.o(i.I2C_Write_Reg) refers to user_i2c.o(i.I2C_Start) for I2C_Start
+    user_i2c.o(i.I2C_Write_Reg) refers to user_i2c.o(i.I2C_SendByte) for I2C_SendByte
+    user_i2c.o(i.I2C_Write_Reg) refers to user_i2c.o(i.I2C_End) for I2C_End
+    user_i2c.o(i.I2C_Write_SCL) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    user_i2c.o(i.I2C_Write_SDA) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    user_key.o(i.HAL_GPIO_EXTI_Callback) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    user_key.o(i.HAL_GPIO_EXTI_Callback) refers to menu.o(i.Menu_key_set) for Menu_key_set
+    user_key.o(i.HAL_GPIO_EXTI_Callback) refers to user_key.o(.data) for .data
+    user_key.o(i.user_key_deal) refers to user_oled.o(i.User_Data_Show) for User_Data_Show
+    user_key.o(i.user_key_deal) refers to user_oled.o(i.User_Init_Show) for User_Init_Show
+    user_key.o(i.user_key_deal) refers to user_oled.o(i.User_PIC_Show) for User_PIC_Show
+    menu.o(i.ConrtolGame) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    menu.o(i.Data) refers to user_oled.o(i.User_Data) for User_Data
+    menu.o(i.Datashow) refers to user_oled.o(i.User_Data_Show) for User_Data_Show
+    menu.o(i.LED) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    menu.o(i.LOG) refers to user_oled.o(i.User_LOG) for User_LOG
+    menu.o(i.LOGshow) refers to user_oled.o(i.User_huizhang_Show) for User_huizhang_Show
+    menu.o(i.Menu_key_set) refers to oled.o(i.OLED_Clear) for OLED_Clear
+    menu.o(i.Menu_key_set) refers to menu.o(.data) for .data
+    menu.o(i.Palygame) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    menu.o(i.Play) refers to user_oled.o(i.User_Play) for User_Play
+    menu.o(i.RTC_display) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    menu.o(i.Set) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    menu.o(i.Temperature) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    menu.o(i.TestTemperature) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    menu.o(i.Time) refers to user_oled.o(i.User_Time) for User_Time
+    menu.o(i.Timeshow) refers to user_oled.o(i.User_PIC_Show) for User_PIC_Show
+    menu.o(i.home) refers to user_oled.o(i.User_Home) for User_Home
+    menu.o(.data) refers to menu.o(i.home) for home
+    menu.o(.data) refers to menu.o(i.Data) for Data
+    menu.o(.data) refers to menu.o(i.Time) for Time
+    menu.o(.data) refers to menu.o(i.LOG) for LOG
+    menu.o(.data) refers to menu.o(i.Play) for Play
+    menu.o(.data) refers to menu.o(i.Datashow) for Datashow
+    menu.o(.data) refers to menu.o(i.Timeshow) for Timeshow
+    menu.o(.data) refers to menu.o(i.LOGshow) for LOGshow
+    menu.o(.data) refers to menu.o(i.Playshow) for Playshow
+    menu.o(.data) refers to menu.o(i.LED) for LED
+    tsl2561.o(i.TSL2561_Init) refers to user_i2c.o(i.I2C_Write_Len) for I2C_Write_Len
+    tsl2561.o(i.TSL2561_ReadData) refers to user_i2c.o(i.I2C_Write_Len) for I2C_Write_Len
+    tsl2561.o(i.TSL2561_ReadData) refers to user_i2c.o(i.I2C_Read_Len) for I2C_Read_Len
+    control.o(i.Game_control) refers to control.o(i.get_key) for get_key
+    control.o(i.Game_control) refers to dinogame.o(i.OLED_DrawRestart) for OLED_DrawRestart
+    control.o(i.Game_control) refers to dinogame.o(i.OLED_DrawGround) for OLED_DrawGround
+    control.o(i.Game_control) refers to dinogame.o(i.OLED_DrawCloud) for OLED_DrawCloud
+    control.o(i.Game_control) refers to dinogame.o(i.OLED_DrawDino) for OLED_DrawDino
+    control.o(i.Game_control) refers to dinogame.o(i.OLED_DrawCactusRandom) for OLED_DrawCactusRandom
+    control.o(i.Game_control) refers to rand.o(.emb_text) for rand
+    control.o(i.Game_control) refers to dinooled.o(i.OLED_ShowString1) for OLED_ShowString1
+    control.o(i.Game_control) refers to dinooled.o(i.OLED_ShowNum1) for OLED_ShowNum1
+    control.o(i.Game_control) refers to stm32f1xx_hal.o(i.HAL_Delay) for HAL_Delay
+    control.o(i.Game_control) refers to dinogame.o(i.OLED_DrawDinoJump) for OLED_DrawDinoJump
+    control.o(i.Game_control) refers to dinooled.o(i.OLED_Clear1) for OLED_Clear1
+    control.o(i.Game_control) refers to control.o(.data) for .data
+    control.o(i.get_key) refers to user_key.o(.data) for button
+    control.o(i.get_key) refers to user_key.o(.data) for last_button
+    dinogame.o(i.OLED_DrawBMP) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawBMP) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinogame.o(i.OLED_DrawBMPFast) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawBMPFast) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawBMPFast) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawBMPFast) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawBMPFast) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawCactus) refers to dinogame.o(i.oled_drawbmp_block_clear) for oled_drawbmp_block_clear
+    dinogame.o(i.OLED_DrawCactus) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawCactus) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawCactus) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawCactus) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawCactus) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawCactus) refers to dinogame.o(.data) for .data
+    dinogame.o(i.OLED_DrawCactus) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinogame.o(i.oled_drawbmp_block_clear) for oled_drawbmp_block_clear
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinogame.o(.data) for .data
+    dinogame.o(i.OLED_DrawCactusRandom) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.OLED_DrawCloud) refers to rand.o(.emb_text) for rand
+    dinogame.o(i.OLED_DrawCloud) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawCloud) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawCloud) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawCloud) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawCloud) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawCloud) refers to dinogame.o(.data) for .data
+    dinogame.o(i.OLED_DrawCloud) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.OLED_DrawCover) refers to dinogame.o(i.OLED_DrawBMPFast) for OLED_DrawBMPFast
+    dinogame.o(i.OLED_DrawCover) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.OLED_DrawDino) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawDino) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawDino) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawDino) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawDino) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawDino) refers to dinogame.o(.data) for .data
+    dinogame.o(i.OLED_DrawDino) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinogame.o(i.oled_drawbmp_block_clear) for oled_drawbmp_block_clear
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinogame.o(.data) for .data
+    dinogame.o(i.OLED_DrawDinoJump) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.OLED_DrawGround) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawGround) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawGround) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawGround) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawGround) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawGround) refers to dinogame.o(.data) for .data
+    dinogame.o(i.OLED_DrawGround) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.OLED_DrawRestart) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.OLED_DrawRestart) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.OLED_DrawRestart) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.OLED_DrawRestart) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.OLED_DrawRestart) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinogame.o(i.OLED_DrawRestart) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
+    dinogame.o(i.OLED_DrawRestart) refers to dinogame.o(.constdata) for .constdata
+    dinogame.o(i.oled_drawbmp_block_clear) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinogame.o(i.oled_drawbmp_block_clear) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinogame.o(i.oled_drawbmp_block_clear) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinogame.o(i.oled_drawbmp_block_clear) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinogame.o(i.oled_drawbmp_block_clear) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinooled.o(i.IIC_Start) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    dinooled.o(i.IIC_Stop) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    dinooled.o(i.IIC_WaitAck) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    dinooled.o(i.IIC_WriteByte) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    dinooled.o(i.IIC_WriteCommand) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinooled.o(i.IIC_WriteCommand) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinooled.o(i.IIC_WriteCommand) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinooled.o(i.IIC_WriteCommand) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinooled.o(i.IIC_WriteData) refers to dinooled.o(i.IIC_Start) for IIC_Start
+    dinooled.o(i.IIC_WriteData) refers to dinooled.o(i.IIC_WriteByte) for IIC_WriteByte
+    dinooled.o(i.IIC_WriteData) refers to dinooled.o(i.IIC_WaitAck) for IIC_WaitAck
+    dinooled.o(i.IIC_WriteData) refers to dinooled.o(i.IIC_Stop) for IIC_Stop
+    dinooled.o(i.OLED_Clear1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_DisplayOff1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_DisplayOn1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_FillPicture1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_Init1) refers to stm32f1xx_hal.o(i.HAL_Delay) for HAL_Delay
+    dinooled.o(i.OLED_Init1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_Init1) refers to dinooled.o(i.OLED_FillPicture1) for OLED_FillPicture1
+    dinooled.o(i.OLED_On1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_SetPos1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_ShowChar1) refers to dinooled.o(i.OLED_SetPos1) for OLED_SetPos1
+    dinooled.o(i.OLED_ShowChar1) refers to dinooled.o(i.OLED_WR_Byte1) for OLED_WR_Byte1
+    dinooled.o(i.OLED_ShowChar1) refers to dinooled.o(.constdata) for .constdata
+    dinooled.o(i.OLED_ShowNum1) refers to dinooled.o(i.oled_pow1) for oled_pow1
+    dinooled.o(i.OLED_ShowNum1) refers to dinooled.o(i.OLED_ShowChar1) for OLED_ShowChar1
+    dinooled.o(i.OLED_ShowString1) refers to dinooled.o(i.OLED_ShowChar1) for OLED_ShowChar1
+    dinooled.o(i.OLED_WR_Byte1) refers to dinooled.o(i.IIC_WriteData) for IIC_WriteData
+    dinooled.o(i.OLED_WR_Byte1) refers to dinooled.o(i.IIC_WriteCommand) for IIC_WriteCommand
+    __2sprintf.o(.text) refers to _printf_char_common.o(.text) for _printf_char_common
+    __2sprintf.o(.text) refers to _sputc.o(.text) for _sputc
+    noretval__2sprintf.o(.text) refers to _printf_char_common.o(.text) for _printf_char_common
+    noretval__2sprintf.o(.text) refers to _sputc.o(.text) for _sputc
+    __printf.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    _printf_dec.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    __printf_flags.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags.o(.text) refers to __printf_flags.o(.constdata) for .constdata
+    __printf_ss.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss.o(.text) refers to __printf_flags_ss.o(.constdata) for .constdata
+    __printf_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_flags_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_wp.o(.text) refers to __printf_flags_wp.o(.constdata) for .constdata
+    __printf_ss_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_ss_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_flags_ss_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss_wp.o(.text) refers to __printf_flags_ss_wp.o(.constdata) for .constdata
+    _printf_d.o(.ARM.Collect$$_printf_percent$$00000009) refers (Weak) to _printf_dec.o(.text) for _printf_int_dec
+    _printf_f.o(.ARM.Collect$$_printf_percent$$00000003) refers (Weak) to printf1.o(x$fpl$printf1) for _printf_fp_dec
+    _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) refers (Special) to _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017) for _printf_percent_end
+    rand.o(.emb_text) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000D) for __rt_lib_init_rand_2
+    rand.o(.emb_text) refers to rand.o(.text) for _rand_init
+    rand.o(.emb_text) refers to rand.o(.bss) for _random_number_data
+    rand.o(.text) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000D) for __rt_lib_init_rand_2
+    rand.o(.text) refers to rand.o(.bss) for .bss
+    rand.o(.bss) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000D) for __rt_lib_init_rand_2
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    f2d.o(x$fpl$f2d) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    f2d.o(x$fpl$f2d) refers to fnaninf.o(x$fpl$fnaninf) for __fpl_fnaninf
+    f2d.o(x$fpl$f2d) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    ffix.o(x$fpl$ffix) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ffix.o(x$fpl$ffix) refers to fnaninf.o(x$fpl$fnaninf) for __fpl_fnaninf
+    ffix.o(x$fpl$ffixr) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ffix.o(x$fpl$ffixr) refers to fnaninf.o(x$fpl$fnaninf) for __fpl_fnaninf
+    fflt_clz.o(x$fpl$ffltu) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fflt_clz.o(x$fpl$fflt) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fflt_clz.o(x$fpl$ffltn) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fmul.o(x$fpl$fmul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fmul.o(x$fpl$fmul) refers to fretinf.o(x$fpl$fretinf) for __fpl_fretinf
+    fmul.o(x$fpl$fmul) refers to fnaninf.o(x$fpl$fnaninf) for __fpl_fnaninf
+    printf1.o(x$fpl$printf1) refers to _printf_fp_dec.o(.text) for _printf_fp_dec_real
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    _printf_intcommon.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_intcommon.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_intcommon.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_fp_dec.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    _printf_fp_dec.o(.text) refers (Special) to lc_numeric_c.o(locale$$code) for _get_lc_numeric
+    _printf_fp_dec.o(.text) refers to bigflt0.o(.text) for _btod_etento
+    _printf_fp_dec.o(.text) refers to btod.o(CL$$btod_d2e) for _btod_d2e
+    _printf_fp_dec.o(.text) refers to btod.o(CL$$btod_ediv) for _btod_ediv
+    _printf_fp_dec.o(.text) refers to btod.o(CL$$btod_emul) for _btod_emul
+    _printf_fp_dec.o(.text) refers to lludiv10.o(.text) for _ll_udiv10
+    _printf_fp_dec.o(.text) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    _printf_fp_dec.o(.text) refers to _printf_fp_infnan.o(.text) for _printf_fp_infnan
+    _printf_fp_dec.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_dec.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_dec.o(.text) refers to rt_locale_intlibspace.o(.text) for __rt_locale
+    _printf_fp_dec.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_char_common.o(.text) refers to __printf_flags_wp.o(.text) for __printf
+    libinit2.o(.ARM.Collect$$libinit$$0000000D) refers (Weak) to rand.o(.text) for _rand_init
+    libinit2.o(.ARM.Collect$$libinit$$0000000F) refers (Weak) to rt_locale_intlibspace.o(.text) for __rt_locale
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers (Weak) to lc_numeric_c.o(locale$$code) for _get_lc_numeric
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    dretinf.o(x$fpl$dretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fnaninf.o(x$fpl$fnaninf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fretinf.o(x$fpl$fretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_locale.o(.text) refers to rt_locale.o(.bss) for __rt_locale_data
+    rt_locale_intlibspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    _printf_fp_infnan.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_infnan.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    bigflt0.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    bigflt0.o(.text) refers to btod.o(CL$$btod_emul) for _btod_emul
+    bigflt0.o(.text) refers to btod.o(CL$$btod_ediv) for _btod_ediv
+    bigflt0.o(.text) refers to bigflt0.o(.constdata) for .constdata
+    bigflt0.o(.constdata) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_d2e) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_d2e) refers to btod.o(CL$$btod_d2e_norm_op1) for _d2e_norm_op1
+    btod.o(CL$$btod_d2e_norm_op1) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_d2e_norm_op1) refers to btod.o(CL$$btod_d2e_denorm_low) for _d2e_denorm_low
+    btod.o(CL$$btod_d2e_denorm_low) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_emul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_emul) refers to btod.o(CL$$btod_mult_common) for __btod_mult_common
+    btod.o(CL$$btod_emul) refers to btod.o(CL$$btod_e2e) for _e2e
+    btod.o(CL$$btod_ediv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_ediv) refers to btod.o(CL$$btod_div_common) for __btod_div_common
+    btod.o(CL$$btod_ediv) refers to btod.o(CL$$btod_e2e) for _e2e
+    btod.o(CL$$btod_emuld) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_emuld) refers to btod.o(CL$$btod_mult_common) for __btod_mult_common
+    btod.o(CL$$btod_emuld) refers to btod.o(CL$$btod_e2d) for _e2d
+    btod.o(CL$$btod_edivd) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_edivd) refers to btod.o(CL$$btod_div_common) for __btod_div_common
+    btod.o(CL$$btod_edivd) refers to btod.o(CL$$btod_e2d) for _e2d
+    btod.o(CL$$btod_e2e) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_e2d) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_e2d) refers to btod.o(CL$$btod_e2e) for _e2e
+    btod.o(CL$$btod_mult_common) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_div_common) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    lc_numeric_c.o(locale$$data) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000016) for __rt_lib_init_lc_numeric_2
+    lc_numeric_c.o(locale$$code) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000016) for __rt_lib_init_lc_numeric_2
+    lc_numeric_c.o(locale$$code) refers to strcmpv7m.o(.text) for strcmp
+    lc_numeric_c.o(locale$$code) refers to lc_numeric_c.o(locale$$data) for __lcnum_c_name
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    istatus.o(x$fpl$ieeestatus) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fpclassify.o(i.__ARM_fpclassify) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_stm32f103xb.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_fini_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000009) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000011) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000012) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000006) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E) for __rt_lib_shutdown_user_alloc_1
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
